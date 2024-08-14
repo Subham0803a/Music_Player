@@ -1,0 +1,124 @@
+/* Background container */
+.background-container {
+    background-image: url('./assets/peakpx.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+}
+ 
+/* Main container */
+.music-player-app {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 20px;
+    background-color: #e3d9d9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Audio player */
+audio {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Button controls */
+.audio-controls {
+    display: flex;
+    gap: 30px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+
+.audio-controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.audio-controls button:hover {
+    background-color: #366639;
+}
+
+/* File upload form */
+.form {
+    margin-bottom: 20px;
+}
+
+.form input[type="file"] {
+    margin-bottom: 10px;
+}
+
+.form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form button:hover {
+    background-color: #007399;
+}
+
+/* Playlist */
+.playlist {
+    background-color: rgb(248, 240, 240);
+    border-radius: 5px;
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.playlist h2 {
+    margin-top: 0;
+    margin-left: 130px;
+    margin-bottom: 10px;
+}
+
+.song-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.song-item:hover {
+    background-color: #dcd8d8;
+}
+
+.song-item.active {
+    background-color: #e0e0e0;
+    font-weight: bold;
+}
+
+/* Scrollbar styles */
+.playlist::-webkit-scrollbar {
+    width: 8px;
+}
+
+.playlist::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.playlist::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.playlist::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
