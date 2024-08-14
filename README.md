@@ -1,6 +1,6 @@
 ## This a simple music player 
 
-I have used React in client side & Flask in server side 
+I have used ReactJs for Front-End & Flask for Back-End
 
 ## To use this project 
 1. git clone this project
