@@ -25,10 +25,6 @@ def upload_file():
     file = request.files['file']
     print(file)
     gridfs.put(file, filename=file.filename)
-
-    # Save the file to MongoDB
-    # musicCol.insert_one({'file': file})
-
     return jsonify({'message': 'File uploaded successfully'})
 
 
@@ -42,10 +38,6 @@ def download_file():
     else:
         return 'File not found', 404
 
-
-    # Return the file as a response
-    # return send_file(file, as_attachment=True)
-    # return json_util.dumps({file})
 
 
 @app.route('/api/music/<filename>', methods=['GET'])
